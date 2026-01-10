@@ -61,7 +61,6 @@ print("_______________________________________________")
 def can_vacinate(temp):
     fever = temp >= 100
     return fever
-
 temp = 95
 eligible_for_shot = can_vacinate(temp)
 print("Eligible for shot:? ", not eligible_for_shot)
@@ -79,7 +78,7 @@ get_pswddetails = input("Enter password details: ")
 match_check = match(get_userdetails,get_pswddetails)
 
 
-def check_num(number)  :
+def check_num(number):
     postive_num = number > 0
     print("Entered number is postive: ",postive_num)  
     negative_num = number < 0
