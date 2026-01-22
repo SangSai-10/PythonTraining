@@ -1,0 +1,42 @@
+def get_type(file):
+    file= file.split(".")
+    filename,fileextn = file
+    filetype = fileextn.uppercase()
+    if filetype == "PDF":
+        return "PDF"
+    elif filetype == "DOC":
+         return "Word"
+    else:
+         return "Image"
+   
+p
+
+    
+
+
+# ----------------------------------------------#
+#      Do not modify the test code below        #
+# ----------------------------------------------#
+
+
+def validate(expected, actual):
+    assert actual == expected, f"File -> expected {expected} got {actual}"
+
+
+result = get_type("resume.pdf")
+validate(expected="PDF", actual=result)
+
+result = get_type("report.doc")
+validate(expected="Word", actual=result)
+
+result = get_type("profile.png")
+validate(expected="Image", actual=result)
+
+result = get_type("profile.jpg")
+validate(expected="Image", actual=result)
+
+result = get_type("profile.jpeg")
+validate(expected="Image", actual=result)
+
+result = get_type("profile.gif")
+validate(expected="Image", actual=result)
