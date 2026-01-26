@@ -24,7 +24,7 @@ def table(num):
 num = 1
 table(num)
 
-# ********4***************
+# # ********4***************
 def table(num):
     while num <= 10:
         print(num)
@@ -33,7 +33,7 @@ num = 1
 table(num)
 
 
-# ********5***************
+# # ********5***************
 def table(num):
     while num <= 10:
         if num % 3 == 0:
@@ -44,12 +44,42 @@ num = 1
 table(num)
 
 
-# ********6***************
-def table(num):
-    while num <= 50:
+# # ********6***************
+def table(stop):
+    num=1
+    while num <= stop:
         if num % 3 == 0 and num % 5 == 0:
             print(num)
         num = num +1
         
-num = 1
+table(50)
+# ********7***************
+def table(num):
+    sum = 1
+    newtotal = 0
+    while sum <= num:
+    #    res = sum + 1
+       newtotal = newtotal + sum
+       sum = sum + 1
+    print(newtotal)  
+
+         
+num = 4
 table(num)
+
+
+# ********8***************
+def table(num):
+    sum = 1
+    newtotal = 1
+    while sum <= num:
+    #    res = sum + 1
+       newtotal = newtotal * sum
+       sum = sum + 1
+    print(newtotal)  
+
+         
+num = 5
+table(num)
+
+
