@@ -105,6 +105,25 @@ total = 0
 for i in numbers:
     total = total + i
 print(total)
+# ***********************************************multiple-factorial****************************
+numbers = [1, 2, 3, 4, 5]
+factlist = []
+fact = 1
+for i in numbers:
+    fact = fact * i
+    factlist.append(fact)
+print(factlist)
+# ***************************************** odd and even*************************************
+numbers = [1, 2, 3, 4, 5, 6]
+odd_list = []
+even_list =[]
+
+for i in numbers:
+    if i % 2 != 0:
+        odd_list.append(i)
+    else:
+       even_list.append(i)
+print(odd_list,even_list)
 
 
 
